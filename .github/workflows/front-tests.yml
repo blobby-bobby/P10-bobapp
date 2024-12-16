@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ng-toolkit
+        working-directory: ./front
 
     steps:
       - name: Check out repository code
@@ -28,7 +28,7 @@ jobs:
       - name: Run Jasmine tests
         env:
           CHROME_BIN: "/usr/bin/google-chrome"
-        run: npm test --code-coverage
+        run: npm test --no-watch --code-coverage
 
       - name: Upload test results
         uses: actions/upload-artifact@v3
