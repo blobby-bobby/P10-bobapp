@@ -17,27 +17,14 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 16
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jasmine tests
-        env:
-          CHROME_BIN: "/usr/bin/google-chrome"
-        run: npm test --no-watch --code-coverage
+      - name: Run Jasmine tests & generate coverage report
+        run: npm run test --no-watch --code-coverage
 
-      - name: Upload test results
+      - name: Generate Jasmine coverage report
         uses: actions/upload-artifact@v3
         with:
-          name: unit-test-results
-          path: front/test-results/test-results.xml
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: front/coverage/
+          name: jasmine-report
+          path: front/coverage/bobapp/*
