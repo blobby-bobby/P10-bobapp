@@ -1,7 +1,12 @@
 name: Unit tests for front-end
-on: [push]
-paths:
-  - "front/**"
+on:
+  push:
+    paths:
+      - "front/**"
+  pull_request:
+    paths:
+      - "front/**"
+
 jobs:
   build-test:
     name: Unit tests (front)
