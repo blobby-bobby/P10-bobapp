@@ -1,10 +1,6 @@
 name: Unit tests for front-end
 run-name: ${{ github.actor }} is running unit tests for the front-end 🚀
 
-on:
-  push:
-  pull_request:
-
 jobs:
   build-test:
     name: Unit tests (front)
