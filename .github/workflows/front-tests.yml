@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - "**"
-    paths:
-      - "front/**"
 
 jobs:
   build-test:
