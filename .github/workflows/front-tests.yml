@@ -9,6 +9,9 @@ jobs:
   build-test:
     name: Unit tests (front)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ng-toolkit
 
     steps:
       - name: Check out repository code
