@@ -1,5 +1,7 @@
 name: Unit tests for front-end
 
+on: [push, pull_request]
+
 jobs:
   build-test:
     name: Unit tests (front)
