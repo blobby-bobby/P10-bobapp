@@ -1,13 +1,5 @@
 name: Unit tests for front-end
 
-on:
-  push:
-    branches:
-      - "**" # Trigger on all branches
-  pull_request:
-    branches:
-      - "**" # Trigger on all PRs
-
 jobs:
   build-test:
     name: Unit tests (front)
