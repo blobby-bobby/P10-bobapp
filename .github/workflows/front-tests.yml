@@ -1,5 +1,12 @@
 name: Unit tests for front-end
-run-name: ${{ github.actor }} is running unit tests for the front-end 🚀
+
+on:
+  push:
+    branches:
+      - "**" # Trigger on all branches
+  pull_request:
+    branches:
+      - "**" # Trigger on all PRs
 
 jobs:
   build-test:
@@ -12,7 +19,7 @@ jobs:
 
     steps:
       - name: Check out repository code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
