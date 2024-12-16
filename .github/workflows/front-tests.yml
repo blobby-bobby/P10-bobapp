@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jasmine tests & generate coverage report
+      - name: Run Jasmine tests & coverage report
         run: npm run test --no-watch --code-coverage
 
       - name: Generate Jasmine coverage report
