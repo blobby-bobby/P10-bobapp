@@ -1,0 +1,30 @@
+name: Tests front-end
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  build-test:
+    name: Unit tests (front)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./front
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Jasmine tests
+        run: npm run test -- --no-watch --code-coverage
+
+      - name: Publish Jasmine coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: jasmine-report
+          path: front/coverage/bobapp/*
