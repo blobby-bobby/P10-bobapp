@@ -1,13 +1,15 @@
-name: Tests front-end
+name: Front-end
 
 on:
   push:
     branches:
-      - "**"
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build-test:
-    name: Unit tests (front)
+    name: unit tests
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -24,7 +26,7 @@ jobs:
         run: npm run test -- --no-watch --code-coverage
 
       - name: Publish Jasmine coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jasmine-report
           path: front/coverage/bobapp/*

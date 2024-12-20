@@ -1,13 +1,15 @@
-name: Tests back-end
+name: Back-end
 
 on:
   push:
     branches:
-      - "**"
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build-test:
-    name: Unit tests (back)
+    name: unit tests
     runs-on: ubuntu-latest
     defaults:
       run:
