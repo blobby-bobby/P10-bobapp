@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jasmine-report
-          path: front/coverage/bobapp/**/*
+          path: front/coverage/bobapp
