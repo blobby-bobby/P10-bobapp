@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate Jasmine coverage report
         run: npm run test -- --code-coverage
-        uses: actions/upload-artifact@v3
+        # uses: actions/upload-artifact@v3
         with:
           name: jasmine-report
           path: front/coverage/bobapp/*
