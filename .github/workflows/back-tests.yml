@@ -1,4 +1,4 @@
-name: Tests back-end
+name: back-end
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-test:
-    name: Analyze back-end
+    name: unit tests
     runs-on: ubuntu-latest
     defaults:
       run:

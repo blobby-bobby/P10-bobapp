@@ -1,4 +1,4 @@
-name: Tests front-end
+name: Front-end
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-test:
-    name: Analyze front-end
+    name: unit tests
     runs-on: ubuntu-latest
     defaults:
       run:
