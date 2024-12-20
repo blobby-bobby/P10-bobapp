@@ -23,5 +23,4 @@ jobs:
             -Dsonar.projectKey=blobby-bobby_P10-bobapp
             -Dsonar.organization=blobby-bobby
             -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.sources=front,back
-            -Dsonar.java.binaries=back/target/classes
+            -Dsonar.sources=front
