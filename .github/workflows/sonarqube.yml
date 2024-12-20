@@ -24,4 +24,4 @@ jobs:
             -Dsonar.organization=blobby-bobby
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.sources=front,back
-            -Dsonar.java.binaries=back/build/classes/java/main
+            -Dsonar.java.binaries=back/target/classes
