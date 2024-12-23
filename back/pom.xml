@@ -14,11 +14,10 @@
 	<name>bobapp</name>
 	<description>L'application de joke par excellence !</description>
 	<properties>
-	  	<sonar.organization>blobby-bobby</sonar.organization>
-  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.projectKey>blobby-bobby_P10-bobapp</sonar.projectKey>
-		<sonar.projectName>P10-bobapp</sonar.projectName>
 		<java.version>11</java.version>
+		<sonar.projectKey>bobapp</sonar.projectKey>
+		<sonar.projectName>P10-bobapp</sonar.projectName>
+		<sonar.qualitygate.wait>true</sonar.qualitygate.wait>
 	</properties>
 	<dependencies>
 		<dependency>
