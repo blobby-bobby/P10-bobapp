@@ -39,3 +39,4 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           projectBaseDir: front/src
+          projectKey: bobapp
