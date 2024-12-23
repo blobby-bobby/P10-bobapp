@@ -6,7 +6,7 @@ target/
 node_modules/
 dist/
 coverage/
-/front/.scannerwork/*
+front/.scannerwork/*
 reports/*
 .env
 
