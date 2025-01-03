@@ -15,8 +15,8 @@
 	<description>L'application de joke par excellence !</description>
 	<properties>
 		<java.version>11</java.version>
-		<sonar.projectKey>bobapp</sonar.projectKey>
-		<sonar.projectName>P10-bobapp</sonar.projectName>
+		<sonar.projectKey>bobapp-back</sonar.projectKey>
+		<sonar.projectName>P10-bobapp-back</sonar.projectName>
 		<sonar.qualitygate.wait>true</sonar.qualitygate.wait>
 	</properties>
 	<dependencies>
