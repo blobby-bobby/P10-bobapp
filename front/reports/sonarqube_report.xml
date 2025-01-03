@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<testExecutions version='1'>
+    <file path='src/app/app.component.spec.ts'>
+        <testCase name='AppComponent should create the app' duration='117'/>
+    </file>
+    <file path='src/app/services/jokes.service.spec.ts'>
+        <testCase name='JokesService should be created' duration='5'/>
+    </file>
+</testExecutions>

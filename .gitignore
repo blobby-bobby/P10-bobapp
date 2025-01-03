@@ -6,6 +6,9 @@ target/
 node_modules/
 dist/
 coverage/
+front/.scannerwork/*
+reports/*
+.env
 
 ### STS ###
 .apt_generated
