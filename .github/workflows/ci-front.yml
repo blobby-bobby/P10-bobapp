@@ -1,4 +1,4 @@
-name: Front-end
+name: CI Front
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  build-test:
+  analyze-frontend:
     name: unit tests
     runs-on: ubuntu-latest
     defaults:
