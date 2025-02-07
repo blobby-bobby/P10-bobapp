@@ -10,7 +10,8 @@ import { JokesService } from './services/jokes.service';
 })
 export class AppComponent implements OnInit {
   public joke$: Observable<Joke | null> = this.jokesService.joke$();
-  // Addiing this comment to test the pipeline
+  // Adding this comment to test the pipeline
+  // this should trigger the CI/CD
 
   constructor(private jokesService: JokesService) {}
 
